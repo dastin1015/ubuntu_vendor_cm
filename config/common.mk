@@ -242,5 +242,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
   ro.cm.version=$(CM_VERSION) \
   ro.modversion=$(CM_VERSION)
 
+# For Ubuntu Touch
+PRODUCT_PROPERTY_OVERRIDES += \
+  persist.camera.shutter.disable=1
 
 -include $(WORKSPACE)/hudson/image-auto-bits.mk
